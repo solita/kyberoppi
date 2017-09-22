@@ -1,21 +1,92 @@
-MIT License
 
-Copyright (c) 2017 Solita
+Creative Commons Nimeä-EiKaupallinen 4.0 Kansainvälinen Julkinen Lisenssi
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Käyttämällä Lisensoituja Oikeuksia (määritelty alla) Sinä hyväksyt tämän Creative Commons Nimeä-EiKaupallinen 4.0 Kansainvälisen Julkisen Lisenssin (”Julkinen Lisenssi”) ehdot ja sitoudut noudattamaan niitä. Siinä laajuudessa kuin tämä Julkinen Lisenssi voidaan tulkita sopimukseksi, Lisensoidut Oikeudet myönnetään Sinulle vastineena siitä, että Sinä hyväksyt nämä ehdot, ja Lisenssinantaja myöntää Sinulle kyseiset oikeudet vastineena niistä eduista, jotka Lisenssinantaja saa asettamalla Lisensoidun Aineiston saataville näillä ehdoilla.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Osa 1 – Määritelmät.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Muunneltu Aineisto tarkoittaa aineistoa, joka on Tekijänoikeuden ja Samankaltaisten Oikeuksien alaista ja joka on johdettu Lisensoidusta Aineistosta tai joka perustuu Lisensoituun Aineistoon ja jossa Lisensoitu Aineisto on käännetty, muutettu, sovitettu, muunnettu tai muulla tavoin muokattu tavalla, joka vaatii luvan Lisenssinantajan hallitsemien Tekijänoikeuksien ja Samankaltaisten Oikeuksien nojalla. Kun Lisensoitu Aineisto on sävellysteos, esitys tai äänitys, tätä Julkista Lisenssiä käytettäessä ja tulkittaessa katsotaan, että Muunneltua Aineistoa syntyy aina kun Lisensoitua Aineistoa ajastetaan liikkuvaan kuvaan.
+Muuntelijan Lisenssi tarkoittaa lisenssiä, jonka Sinä myönnät Sinun tekemiisi, Sinun Tekijänoikeuden ja Samankaltaisten Oikeuksiesi alaisiin Muunnellun Aineiston osiin tämän Julkisen Lisenssin ehtojen mukaisesti.
+Tekijänoikeus ja Samankaltaiset Oikeudet tarkoittavat tekijänoikeutta ja/tai siihen läheisesti liittyviä samankaltaisia oikeuksia, kuten esimerkiksi esityksiä, lähetyksiä ja äänitallenteita koskevat oikeudet sekä Sui Generis Tietokantaoikeudet, riippumatta siitä, kuinka nämä oikeudet on nimetty tai luokiteltu. Tätä Julkista Lisenssiä käytettäessä ja tulkittaessa katsotaan, että kohdissa 2(b)(1) - (2) määritellyt oikeudet eivät kuulu Tekijänoikeuteen ja Samankaltaisiin Oikeuksiin.
+Tehokkaat Tekniset Toimenpiteet tarkoittavat sellaisia toimenpiteitä, joiden kiertäminen ilman asianmukaisia valtuuksia on kielletty laeilla, joilla on toimeenpantu 20.12.1996 solmitun WIPO:n tekijänoikeussopimuksen 11 artiklan ja/tai muiden samankaltaisten kansainvälisten sopimusten mukaiset velvollisuudet.
+Poikkeukset ja Rajoitukset tarkoittavat fair use ja fair dealing -poikkeuksia ja/tai mitä tahansa muuta Tekijänoikeuteen ja Samankaltaisiin Oikeuksiin kohdistuvaa poikkeusta tai rajoitusta, joka koskee Sinun Lisensoidun Aineiston käyttöäsi.
+Lisensoitu Aineisto tarkoittaa taiteellista tai kirjallista teosta, tietokantaa tai muuta aineistoa, johon Lisenssinantaja on myöntänyt lisenssin tämän Julkisen Lisenssin ehdoin.
+Lisensoidut Oikeudet tarkoittavat Sinulle tämän Julkisen Lisenssin ehtojen mukaisesti myönnettyjä oikeuksia rajoittuen kaikkiin sellaisiin Tekijänoikeuksiin ja Samankaltaisiin Oikeuksiin, jotka koskevat Sinun Lisensoidun Aineiston käyttöäsi ja joihin Lisenssinantaja on oikeutettu myöntämään lisenssin.
+Lisenssinantaja tarkoittaa yhtä tai useampaa luonnollista tai oikeushenkilöä, joka myöntää tämän Julkisen Lisenssin mukaiset oikeudet.
+EiKaupallinen tarkoittaa, että jokin ei ole pääasiassa tarkoitettu tai suunnattu kaupallisen hyödyn tai rahallisen korvauksen tavoitteluun. Tätä Julkista Lisenssiä käytettäessä ja tulkittaessa Lisensoidun Aineiston vaihtaminen muuhun Tekijänoikeuden ja Samankaltaisten Oikeuksien alaiseen aineistoon digitaalisen tiedostojenjakamisen keinoin tai muilla samankaltaisilla tavoilla katsotaan EiKaupalliseksi, mikäli vaihtamiseen ei liity rahallisen korvauksen maksamista.
+Jakaa tarkoittaa aineiston tarjoamista yleisölle millä tahansa sellaisella keinolla tai tavalla, joka vaatii luvan Lisensoitujen Oikeuksien nojalla, kuten valmistamalla kappaleita, julkisesti näyttämällä, julkisesti esittämällä, levittämällä, jakamalla, välittämällä tai maahantuomalla, sekä aineiston saattamista yleisön saataville, mukaan lukien sellaisilla keinoilla ja tavoilla, joiden avulla yleisöön kuuluvilla henkilöillä on mahdollisuus saada aineisto saataviinsa itse valitsemastaan paikasta ja itse valitsemanaan aikana.
+Sui Generis Tietokantaoikeudet tarkoittavat sellaisia muita oikeuksia kuin tekijänoikeutta, jotka perustuvat Euroopan parlamentin ja neuvoston 11.3.1996 antamaan direktiiviin 96/9/EY tietokantojen oikeudellisesta suojasta, ottaen huomioon direktiivin muutokset ja/tai sen sijaan tulleet säännökset, sekä muita olennaisesti vastaavia oikeuksia muualla maailmassa.
+Sinä tarkoittaa luonnollista tai oikeushenkilöä, joka käyttää Lisensoituja Oikeuksia tämän Julkisen Lisenssin nojalla. Sanoilla Sinun, Sinua, Sinulle, Sinulla, Sinulta ja Sinuun on vastaava merkitys.
+Osa 2 – Lisenssin laajuus.
+
+Lisenssin myöntäminen.
+Lisenssinantaja myöntää Sinulle tämän Julkisen Lisenssin ehtojen mukaisesti maailmanlaajuisen, rojaltivapaan ja peruuttamattoman lisenssin ilman alilisensointi- tai yksinoikeutta. Sinä voit käyttää Lisensoituun Aineistoon kohdistuvia Lisensoituja Oikeuksia seuraavasti:
+valmistaa kappaleita Lisensoidusta Aineistosta ja Jakaa Lisensoitua Aineistoa, osaksi tai kokonaisuudessaan, ainoastaan EiKaupallisessa tarkoituksessa; sekä
+tuottaa Muunneltua Aineistoa, valmistaa Muunnellusta Aineistosta kappaleita ja Jakaa Muunneltua Aineistoa ainoastaan EiKaupallisessa tarkoituksessa.
+Poikkeukset ja Rajoitukset. Selvyyden vuoksi todettakoon, että silloin kun Sinun käyttöösi soveltuu Poikkeuksia ja Rajoituksia, tämä Julkinen Lisenssi ei sovellu, eikä Sinun tarvitse noudattaa tämän Julkisen Lisenssin ehtoja.
+Voimassaoloaika. Tämän Julkisen Lisenssin voimassaoloaika on määritelty kohdassa 6(a).
+Välineet ja muodot; tekniset muutokset ovat sallittuja. Lisenssinantaja sallii Sinulle Lisensoitujen Oikeuksien käytön kaikilla jo tunnetuilla ja myöhemmin kehitettävillä välineillä ja kaikissa jo tunnetuissa ja myöhemmin kehitettävissä muodoissa sekä tarvittavien teknisten muutosten tekemisen tämän toteuttamiseksi. Lisenssinantaja luopuu ja/tai suostuu pidättäytymään käyttämästä oikeuttaan tai määräysvaltaansa estääkseen Sinua tekemästä sellaisia teknisiä muutoksia, jotka ovat tarpeen Lisensoitujen Oikeuksien käyttämiseksi, mukaan lukien sellaisia teknisiä muutoksia, jotka ovat tarpeen Tehokkaiden Teknisten Toimenpiteiden kiertämiseksi. Tätä Julkista Lisenssiä käytettäessä ja tulkittaessa katsotaan, ettei pelkkä tämän kohdan 2(a)(4) nojalla sallittujen muutosten tekeminen koskaan merkitse Muunnellun Aineiston syntymistä.
+Myöhemmät käyttäjät.
+Lisenssinantajan tarjous – Lisensoitu Aineisto. Kaikki, jotka vastaanottavat Lisensoitua Aineistoa, saavat Lisenssinantajalta automaattisesti tarjouksen käyttää Lisensoituja Oikeuksia tämän Julkisen Lisenssin ehtojen mukaisesti.
+Ei myöhempiä käyttäjiä koskevia rajoituksia. Sinä et saa tarjota etkä asettaa mitään sellaisia Lisensoitua Aineistoa koskevia ylimääräisiä tai poikkeavia ehtoja, etkä kohdistaa Lisensoituun Aineistoon mitään sellaisia Tehokkaita Teknisiä Toimenpiteitä, jotka estävät Lisensoidun Aineiston vastaanottajaa käyttämästä Lisensoituja Oikeuksia.
+Ei ilmaise hyväksyntää. Mikään seikka tässä Julkisessa Lisenssissä ei anna, eikä minkään seikan tässä Julkisessa Lisenssissä voida tulkita antavan, lupaa väittää tai antaa ymmärtää, että Sinulla tai Sinun Lisensoidun Aineiston käytölläsi olisi liityntä Lisenssinantajaan tai muuhun kohdan 3(a)(1)(A)(i) mukaisesti nimettävään tahoon tai että Lisenssinantaja tai muu yllä mainittu taho olisi sponsoroinut Sinun toimintaasi tai tukenut tai myöntänyt Sinun toiminnallesi muodollisen aseman.
+Muut oikeudet.
+
+Tällä Julkisella Lisenssillä ei lisensoida moraalisia oikeuksia kuten respektioikeutta, eikä myöskään henkilön oikeutta määrätä nimensä, kuvansa tai henkilönsä muun tunnistettavan osan kaupallisesta käytöstä (right of publicity), yksityisyyden suojaa koskevia oikeuksia ja/tai muita sellaisia persoonallisuusoikeuksia; kuitenkin siinä laajuudessa kuin on mahdollista ja tarpeen Sinun Lisensoitujen Oikeuksien käytöllesi, muttei muilta osin, Lisenssinantaja luopuu tällaisista oikeuksistaan ja/tai sitoutuu siihen, että ei esitä tällaisiin oikeuksiin perustuvia väitteitä.
+Tällä Julkisella Lisenssillä ei lisensoida patentti- ja tavaramerkkioikeuksia.
+Siinä laajuudessa kuin on mahdollista, Lisenssinantaja luopuu oikeudestaan kerätä Sinulta rojalteja Lisensoitujen Oikeuksien käytöstä, tapahtuipa tämä suoraan tai oikeuksia hallinnoivan järjestön kautta tai minkä tahansa vapaaehtoisen, lakisääteisen tai pakollisen lisensointijärjestelmän nojalla taikka sellaisen lisensointijärjestelmän nojalla, josta voidaan luopua. Kaikissa muissa tapauksissa Lisenssinantaja nimenomaisesti pidättää itsellään oikeuden kerätä sellaisia rojalteja, myös tapauksissa, joissa Lisensoitua Aineistoa käytetään muihin kuin EiKaupallisiin tarkoituksiin.
+Osa 3 – Lisenssin ehdot.
+
+Sinun Lisensoitujen Oikeuksien käyttöösi sovelletaan nimenomaisesti seuraavia ehtoja.
+
+Nimeä.
+
+Jos Sinä Jaat Lisensoitua Aineistoa (mukaan lukien muokatussa muodossa), Sinun tulee:
+
+säilyttää seuraavat tiedot, mikäli Lisenssinantaja on antanut ne Lisensoidun Aineiston mukana:
+Lisensoidun Aineiston tekijä(t) ja muut nimettäväksi määritellyt tahot identifioiva maininta jollakin Lisenssinantajan edellyttämällä kohtuullisella tavalla (mukaan lukien salanimi, jos sellaista on käytetty);
+tekijänoikeusmerkintä;
+merkintä, joka viittaa tähän Julkiseen Lisenssiin;
+merkintä, joka viittaa takuun rajoituslausekkeeseen;
+Lisensoituun Aineistoon viittaava URI tai hyperlinkki, mikäli tämä on kohtuullisesti toteutettavissa;
+merkitä, jos Sinä olet muokannut Lisensoitua Aineistoa, ja säilyttää aiempia muokkauksia koskevat merkinnät; sekä
+merkitä, että Lisensoitu Aineisto on lisensoitu tällä Julkisella Lisenssillä, ja sisällyttää tämän Julkisen Lisenssin teksti taikka tähän Julkiseen Lisenssiin viittaava URI tai hyperlinkki.
+Sinä voit täyttää kohdan 3(a)(1) mukaiset edellytykset millä tahansa kohtuullisella tavalla riippuen välineestä, keinoista ja yhteydestä, jossa Sinä Jaat Lisensoitua Aineistoa. Voi esimerkiksi olla kohtuullista täyttää vaatimukset tarjoamalla URI tai hyperlinkki resurssiin, josta vaaditut tiedot ilmenevät.
+Lisenssinantajan näin vaatiessa Sinun tulee poistaa mitkä tahansa kohdan 3(a)(1)(A) nojalla vaaditut tiedot siinä laajuudessa kuin tämä on kohtuullisesti toteutettavissa.
+Jos Sinä Jaat Sinun tuottamaasi Muunneltua Aineistoa, Sinun käyttämäsi Muuntelijan Lisenssi ei saa estää Muunnellun Aineiston vastaanottajia noudattamasta tätä Julkista Lisenssiä.
+Osa 4 – Sui Generis Tietokantaoikeudet.
+
+Sikäli kuin Lisensoidut Oikeudet sisältävät Sui Generis Tietokantaoikeuksia, jotka koskevat Sinun Lisensoidun Aineiston käyttöäsi:
+
+selvyyden vuoksi todettakoon, että kohta 2(a)(1) antaa Sinulle oikeuden kopioida, käyttää uudelleen, toisintaa ja Jakaa koko tietokannan sisältöä tai sen olennaista osaa ainoastaan EiKaupallisessa tarkoituksessa;
+jos Sinä sisällytät kaiken tai olennaisen osan tietokannan sisällöstä tietokantaan, johon Sinulla on Sui Generis Tietokantaoikeuksia, se tietokanta, johon Sinulla on Sui Generis Tietokantaoikeuksia (mutteivät tämän tietokannan yksittäiset sisällöt), katsotaan Muunnelluksi Aineistoksi; ja
+Sinun täytyy noudattaa kohdan 3(a) ehtoja, jos Sinä Jaat koko tietokannan sisältöä tai sen olennaista osaa.
+Selvyyden vuoksi todettakoon, että tämä osa 4 täydentää eikä syrjäytä Sinun tästä Julkisesta Lisenssistä johtuvia velvollisuuksiasi tilanteissa, joissa Lisensoidut Oikeudet käsittävät muita Tekijänoikeuksia ja Samankaltaisia Oikeuksia.
+Osa 5 – Takuun rajoitus ja vastuunrajoituslauseke.
+
+Siinä laajuudessa kuin on mahdollista ja ellei Lisenssinantaja muuhun erikseen sitoudu, Lisenssinantaja tarjoaa Lisensoidun Aineiston sellaisena kuin se on ja sellaisena kuin se on saatavilla ilman minkäänlaista nimenomaista, oletettua, lainmukaista tai muunkaltaista takuuta tai takuuehtoa Lisensoituun Aineistoon liittyen. Tämä käsittää esimerkiksi vakuutukset, jotka koskevat omistusoikeutta, myyntikelpoisuutta, tiettyyn tarkoitukseen sopivuutta, oikeuksien loukkaamattomuutta, virheettömyyttä (piilevät tai muut viat), tarkkuutta taikka todettavissa olevia tai todettavissa olemattomia virheitä. Siltä osin kuin takuun rajoitukset eivät ole joltain osin tai lainkaan sallittuja, tämä takuun rajoitus ei koske Sinua.
+Siinä laajuudessa kuin on mahdollista, Lisenssinantaja ei ole missään tapauksessa Sinuun nähden vastuussa Sinulle millään oikeudellisella perusteella (mukaan lukien tuottamuksella) eikä muutoinkaan mistään välittömistä, erityisistä, epäsuorista, sattumanvaraisista tai välillisistä vahingoista johtuvan tai rangaistusluonteisen vahingonkorvausvastuun perusteella syntyvistä vahingoista taikka muista menetyksistä, kuluista, kustannuksista tai vahingoista, jotka johtuvat tästä Julkisesta Lisenssistä tai Lisensoidun Aineiston käytöstä, vaikka Lisenssinantajaa olisi varoitettu tällaisten menetysten, kulujen, kustannusten tai vahinkojen vaarasta. Siltä osin kuin vastuunrajoitus ei ole joltain osin tai lainkaan sallittu, tämä vastuunrajoituslauseke ei koske Sinua.
+Yllä olevaa takuun rajoitusta ja vastuunrajoituslauseketta tulkitaan tavalla, joka, siinä laajuudessa kuin on mahdollista, läheisimmin vastaa täydellistä takuun rajoitusta ja vastuuvapautta.
+Osa 6 – Voimassaoloaika ja päättyminen.
+
+Tämä Julkinen Lisenssi on voimassa sillä lisensoidun Tekijänoikeuden ja Samankaltaisten Oikeuksien voimassaoloajan. Jos Sinä et kuitenkaan noudata tämän Julkisen Lisenssin ehtoja, Sinun tähän Julkiseen Lisenssiin perustuvat oikeutesi päättyvät automaattisesti.
+Sikäli kuin Sinun oikeutesi käyttää Lisensoitua Aineistoa on päättynyt kohdan 6(a) nojalla, se palautuu:
+
+automaattisesti siitä päivästä lähtien, kun loukkaus päättyy, jos loukkaus päättyy 30 päivän kuluessa siitä, kun Sinä sait loukkauksesta tiedon; tai
+kun Lisenssinantaja nimenomaisesti palauttaa oikeutesi.
+Selvyyden vuoksi todettakoon, ettei tämä kohta 6(b) vaikuta mihinkään sellaisiin oikeussuojakeinoihin, jotka ovat Lisenssinantajan käytettävissä perustuen tämän Julkisen Lisenssin loukkaamiseen Sinun toimestasi.
+Selvyyden vuoksi todettakoon, että Lisenssinantaja voi myös tarjota Lisensoitua Aineistoa muilla ehdoilla tai lopettaa Lisensoidun Aineiston levittämisen koska tahansa; tämä ei kuitenkaan lakkauta tätä Julkista Lisenssiä.
+Osat 1, 5, 6, 7 ja 8 pysyvät voimassa, vaikka tämä Julkinen Lisenssi lakkaisi.
+Osa 7 – Muut ehdot.
+
+Lisenssinantaja ei ole sidottu mihinkään Sinun ilmoittamiisi täydentäviin tai poikkeaviin ehtoihin, ellei tästä ole nimenomaisesti sovittu.
+Kaikki Lisensoitua Aineistoa koskevat muut järjestelyt, yhteisymmärrykset tai sopimukset, joita ei tässä Julkisessa Lisenssissä mainita, ovat erillisiä ja itsenäisiä suhteessa tämän Julkisen Lisenssin ehtoihin.
+Osa 8 – Tulkinta.
+
+Selvyyden vuoksi todettakoon, että tätä Julkista Lisenssiä ei tulkita eikä tule tulkita siten, että se vähentäisi, rajoittaisi, estäisi tai asettaisi ehtoja sellaiselle Lisensoidun Aineiston käytölle, joka olisi lain mukaan sallittua ilman tämän Julkisen Lisenssin mukaista lupaa.
+Siinä laajuudessa kuin on mahdollista, jos jokin tämän Julkisen Lisenssin ehdoista katsottaisiin täytäntöönpanokelvottomaksi, sitä muutetaan automaattisesti vähäisimmin täytäntöönpanokelpoisuuden edellyttämin muutoksin. Jos ehtoa ei voida muuttaa, se erotetaan tästä Julkisesta Lisenssistä siten, ettei se vaikuta jäljellä olevien ehtojen täytäntöönpanokelpoisuuteen.
+Mistään tämän Julkisen Lisenssin ehdosta ei luovuta, eikä mitään lisenssinvastaista käyttöä hyväksytä, ellei Lisenssinantaja tähän nimenomaisesti suostu.
+Mikään tässä Julkisessa Lisenssissä ei ole, eikä sen voida tulkita olevan, rajoitus tai luopuminen mistään Lisenssinantajalle tai Sinulle kuuluvasta etuoikeudesta tai oikeudellisesta suojasta, mukaan lukien etuoikeuksista tai oikeudellisesta suojasta menettelyissä, jotka tapahtuvat minkä tahansa oikeudenkäyttöalueen piirissä tai suhteessa mihin tahansa viranomaiseen.
+Creative Commons ei ole julkisten lisenssiensä osapuoli. Siitä huolimatta Creative Commons voi päättää asettaa julkaisemaansa aineistoa saataville jollakin julkisista lisensseistään, jolloin tällaisissa tapauksissa sen katsotaan olevan “Lisenssinantaja”. Creative Commonsin julkisten lisenssien teksti on asetettu vapaaseen yleiseen käyttöön (public domain) CC0 Public Domain -lausuman mukaisesti. Creative Commons ei salli ilman etukäteistä kirjallista suostumusta tavaramerkkinsä “Creative Commons” tai minkään muunkaan tavaramerkin taikka Creative Commons -logon käyttöä, mukaan lukien tapauksissa, joissa Creative Commonsin julkisia lisenssejä on luvatta muunneltu, tai liittyen mihin tahansa muihin järjestelyihin, yhteisymmärryksiin tai sopimuksiin, jotka koskevat lisensoidun materiaalin käyttöä. Edellisessä virkkeessä sanottu ei kuitenkaan koske niitä rajoitettuja tapauksia, joissa tarkoitus on ilmaista materiaalin olevan lisensoitu Creative Commonsin julkisella lisenssillä tai joissa käyttö on muutoin Creative Commonsin osoitteessa creativecommons.org/policies julkaisemien käytännesääntöjen sallimaa. Selvyyden vuoksi todettakoon, että tämä kappale ei ole osa Creative Commonsin julkisia lisenssejä.
+
+Creative Commonsiin voi ottaa yhteyttä osoitteessa creativecommons.org.
