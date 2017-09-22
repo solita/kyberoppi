@@ -6,6 +6,14 @@ Tästä materiaalipankista saat perustietoa verkkosovelluksen tietoturvasta ja s
 
 # Referenssi materiaali
 
+## Autentikoinnin tarkastuslista
+
+* Onko tunniste satunnainen, siten että sitä ei voi arvata tai päätellä?
+* Voiko tunnistetta ohjata hyökkääjän haltuun jotenkin? (HttpOnly ja secure -flagit?)
+* Voiko käyttäjän puolesta tehdä pyyntöjä sovellukseen? (CSRF-esto käytössä?)
+* Voiko sovelluksen tarkastusta käyttäjätunnuksesta/salasanasta manipuloida?
+
+
 ## Same-origin policy
 
 Kts. [Wikipedian artikkeli](https://en.wikipedia.org/wiki/Same-origin_policy)
@@ -47,13 +55,47 @@ Eri tilanteissa web-sovellukset enkoodaavat sisältöä eri tavoilla. Erilaisten
 * HTML, hex: ```&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;&#x31;&#x29;```
 * HTML, decimal: ```&#97;&#108;&#101;&#114;&#116;&#40;&#49;&#41;```
 * Javascript,HEX: ```\x61\x6c\x65\x72\x74\x28\x31\x29```
-* Javascript, unicode ```\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029 ```
-* Javascript, Unicode ```\u{0061} .. ```
+* Javascript, unicode ```\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029```
+* Javascript, Unicode ```\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}\u{0028}\u{0031}\u{0029}```
 * URL: ```%61%6c%65%72%74%28%31%29```
+* Base64
 
 Lisätietoa:
-Javascriptin enkoodaukset: https://mathiasbynens.be/notes/javascript-escapes
-HTML enkoodaukset: https://mathiasbynens.be/notes/ambiguous-ampersands
+* Javascriptin enkoodaukset: https://mathiasbynens.be/notes/javascript-escapes
+* HTML enkoodaukset: https://mathiasbynens.be/notes/ambiguous-ampersands
+* Erikoismerkit verkko-osoitteissa: [Punycode](https://en.wikipedia.org/wiki/Punycode)
+
+
+## Javascriptin ajaminen
+
+Javascriptin ujuttamiseen ajoon on useita eri tapoja jos sovelluksessa on huolimattomuuden takia jonkinlainen XSS-aukko tai muu ongelma. Tässä on listattu joitakin:
+
+* ```<script>``` tagin käyttö.
+* ```onError=alert(1)``` erilaiset event-käsittelijät, joista onError on yksi.  
+* ```<svg/onload=alert(1)>``` SVG-kuvaformaation hyväksikäyttö + event handler.
+* XML-dokumentin sisällä (CDATA)
+* SVG-kuvan käyttö alustana (CDATA + script)
+
+Lisätietoa:
+* https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot
+* https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20injection
+
+## Erikoiset URL:t
+
+Selaimet tunnistavat useita URL-osoitteita, jotka eivät ole normaaleja verkko-osoitteita ja niitä voidaan hyötykäyttää. Riippuu selaimen ja tietokoneen asetuksista mitä kaikkea voidaan tehdä, mutta tässä on joitakin esimerkkejä.
+
+* data:text/html - esimerkiksi ```data:text/html,<script>alert(1)</script>```
+* ```javascript:alert(1)```
+* ```http://;URL=javascript:alert(1)```
+* Base64-enkoodauksen hyväksikäyttö: ```data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+```
+* ```mailto:```  -sähköpostin lähetys
+* ```callto:```  -puhelinsoitto (esimerkiksi maksulliseen numeroon)
+* ```tel:``` - puhelinsoitto (esimerkiksi maksulliseen numeroon)
+
+Data-tyyppistä "verkko-osoitetta" voidaan käyttää myös dynaamisesti kuvien tai äänen muodostamiseen verkkosivulla jos HTML-koodissa osoitetaan datasisältö sen avulla.
+
+Lisätietoa:
+* https://github.com/ouspg/urlhandlers
 
 
 
@@ -63,5 +105,5 @@ HTML enkoodaukset: https://mathiasbynens.be/notes/ambiguous-ampersands
 ![lisenssi](88x31.png)
 
 Creative Commons, Attribution-NonCommercial CC BY-NC
-Kts. [LICENSE].
+Kts. [LISENSSI](LICENSE).
 
