@@ -140,11 +140,11 @@ Kts. lisätietoja [OWASP Top 10 sivulta](https://www.owasp.org/index.php/Top_10_
 Hyvin paljon voi tehdä selaimen kehitystyökaluilla.
 
 Valikosta voidaan avata developer tools näkyviin
-![developer tools](devtools3.png)
+![developer tools](devtools2.png)
 
 Tools tarjoaa näkymiä verkkoliikenteeseen, lähdekoodiin ja muihin asioihin eri välilehdillä.
 
-![network välilehti](devtools2.png)
+![network välilehti](devtools3.png)
 
 Javascript-konsolissa voi ajaa Javascript-komentoja ja se on hyödyllinen kun tutkii sovelluksen käyttöliittymän koodin toimintaa.
 
