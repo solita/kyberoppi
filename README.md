@@ -4,6 +4,8 @@ Tästä materiaalipankista saat perustietoa verkkosovelluksen tietoturvasta ja s
 
 # Perusasiat
 
+Kts. erillinen dokumentti [Perusasiat](perusasiat.md)
+
 # Referenssi materiaali
 
 ## Autentikoinnin tarkastuslista
