@@ -2,6 +2,9 @@
 
 Tästä materiaalipankista saat perustietoa verkkosovelluksen tietoturvasta ja sen testaamisesta. Materiaali on valikoitu ja tiivistetty palvelemaan ensisijaisesti ohjelmistokehittäjiä, jotka haluavat tehdä turvallisia järjestelmiä. 
 
+HUOM: Muista että tietomurron yrittäminenkin on rangaistava teko! Älä tee luvatonta tietoturvatestausta muiden järjestelmille. 
+
+
 # Perusasiat web-sovellusten tietoturvasta
 
 Perustiedot on koottu erilliseen dokumenttiin: [Perusasiat](perusasiat.md).
@@ -51,7 +54,6 @@ X-Content-Type-Options: nosniff|Estää selainta arvaamasta uudelleen MIME-type�
 |Upgrade-Insecure-Requests|Selain voidaan ohjata käyttämään HTTPS-protokollaa HTTP:n sijaan automaattisesti.|muut paitsi IE|1|https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests|
 
 Yksityiskohtia selainten tarjoamasta tuesta: [Can I Use?](http://www.caniuse.com/#compare=ie+11,edge+16,firefox+58,chrome+64,safari+11,opera+49&compare_cats=Security)
-
  
 
 ## Enkoodaukset
@@ -99,11 +101,33 @@ Selaimet tunnistavat useita URL-osoitteita, jotka eivät ole normaaleja verkko-o
 * ```mailto:```  -sähköpostin lähetys
 * ```callto:```  -puhelinsoitto (esimerkiksi maksulliseen numeroon)
 * ```tel:``` - puhelinsoitto (esimerkiksi maksulliseen numeroon)
+* ```file://``` - tiedostojärjestelmä paikallisen koneen levyllä
 
 Data-tyyppistä "verkko-osoitetta" voidaan käyttää myös dynaamisesti kuvien tai äänen muodostamiseen verkkosivulla jos HTML-koodissa osoitetaan datasisältö sen avulla.
 
 Lisätietoa:
 * https://github.com/ouspg/urlhandlers
+
+## Parametrien käsittely
+
+Parametrien käsittelyssä tehdyt ohjelmointivirheet ovat yleinen tapa hyödyntää sovelluksen virhettä. Tässä on esimerkkejä asioista joita voit kokeilla:
+
+* Parametrin jättäminen pois
+* Arvon korvaaminen jollain muulla (jonkun muun id, -1,  tms..)
+* Saman parametrin toistaminen useita kertoja eri arvoilla, [HTTP Parameter Pollution](https://www.owasp.org/index.php/Testing_for_HTTP_Parameter_pollution_(OTG-INPVAL-004))
+* Erikoisarvojen käyttö: ```null```, ```nil```, ```NaN```, lukualueiden ääriarvot
+* Erikoismerkit: ```'```, ```%``` ja muut joiden virheellinen käsittely avaa pääsyn sovelluslogiikan manipulointiin
+* Arvojen lisääminen. Hyväksyykö palvelin myös sellaisia tietokenttiä, joita selain ei itse lähettäisi?
+* ylipitkän arvon käyttö
+* välilyöntien käyttö alussa tai lopussa
+
+
+## Piilotetut elementit käyttöliittymässä
+
+* ```form``` elementin hidden-kentät.
+* CSS-tyyleillä piilotetut käyttöliittymäelementit voivat avata pääsyn toimintoihin, joita ei pitäisi päästä käyttämään.
+
+
 
 
 # Lisenssi
