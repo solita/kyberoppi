@@ -137,4 +137,22 @@ Kts. lisätietoja [OWASP Top 10 sivulta](https://www.owasp.org/index.php/Top_10_
 
 # Työkalut
 
-.. 
+Hyvin paljon voi tehdä selaimen kehitystyökaluilla.
+
+Valikosta voidaan avata developer tools näkyviin
+![developer tools](devtools3.png)
+
+Tools tarjoaa näkymiä verkkoliikenteeseen, lähdekoodiin ja muihin asioihin eri välilehdillä.
+
+![network välilehti](devtools2.png)
+
+Javascript-konsolissa voi ajaa Javascript-komentoja ja se on hyödyllinen kun tutkii sovelluksen käyttöliittymän koodin toimintaa.
+
+![javascript console](devtools1.png)
+
+
+
+
+HTTP proxy, esimerkiksi [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) auttaa manipuloimaan ja tarkkailemaan liikennettä selaimen ja palvelimen välillä.
+
+

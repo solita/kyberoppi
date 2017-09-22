@@ -37,14 +37,21 @@ Kts. [Wikipedian artikkeli](https://en.wikipedia.org/wiki/Same-origin_policy)
 |------|-----------|:-----------:|:----------------------:|------:|
 X-Content-Type-Options: nosniff|Estää selainta arvaamasta uudelleen MIME-typeä.|Chrome, IE8|kokoelma-hederi. nosniff estää tietoturvaongelmia.|http://stackoverflow.com/questions/18337630/what-is-x-content-type-options-nosniff|
 |Content-Type |MIME-type..| | | |
-|Keep-Alive| | | | |
+|Content-Disposition|Liitetiedostojen erottamiseen sisällöstä, joka näytetään selaimessa.|||Tiedostonimen kanssa on oltava tarkkana.||Keep-Alive| | | | |
 |X-Frame-Options:SAMEORIGIN| Estää sovelluksen avaamisen frameen mielivaltaisesta domainista.| |SAMEORIGIN, ellei ole erityistä syytä sallia iframeja kaikkialta, estetään ne. Tietoturvan kannalta estää clickjacking tyyppisiä hyökkäyksiä.|http://en.wikipedia.org/wiki/Clickjacking|
 |Cookie + secure| Salaa cookien. Toimii vain jos on HTTPS, eli ei välttämättä devausympäristössä.| |https://www.owasp.org/index.php/SecureFlag|
 |cookie + HTTP Only| Cookien käsittely javascriptilla estetty. Session cookieen ei ole mitenkään tarpeellista päästä käsiksi Javascriptilla clientin päässä. Tietoturva-asia. Triviaali hoitaa kuntoon.| | | https://www.owasp.org/index.php/HttpOnly|
+|Same-Site|CSRF-esto|Chrome, Opera| lax (strict jossain tapauksissa)|https://www.owasp.org/index.php/SameSite |
 |Strict-Transport-Security| Ohjeistaa selainta käyttämään aina HTTPS:ää. Ignoroidaan HTTP:tä käytettäessä.|Muut kuin IE|Mikäli sivustoa käytetään aina HTTPS:n yli, kannattaa headeri ottaa käyttöön|http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security|
 |Cache-Control|IE:n kanssa monenlaisia ongelmia luvassa. Voi toimia myös eri tavalla HTTPS-protokollassa.| | | |
 |X-XSS-Protection|Ehdottaa selaimelle, että sisällössä voi olla potentiaalisesti XSS sisältöä.|IE, Chrome, Safari| 1 (jos sivulla näytetään käyttäjän sisältöä), selain voi tämän perusteella käynnistää XSS filtterinsä jos käyttäjä on sen jostain syystä disabloinut.|OWASP-ZAP antaa low-tason varoituksen tämän puuttumisesta.|
-|Same-Site|CSRF-esto|Chrome, Opera| lax (strict jossain tapauksissa)|https://www.owasp.org/index.php/SameSite |
+|X-Forwarded-For|Pyynnön mukana välitettävä headeri palvelimelle, jota käytetään reverse proxy-palvelimen kanssa. Tätä ei pitäisi hyväksyä käyttäjän selaimelta, koska se voi aiheuttaa ongelmia.| | Vastaava myös x-forwarded-host|
+|Content-Security-Policy|Voi asettaa rajoituksia sille mitä sisältöä selain voi ladata ja estää ongelmia.| | | Katso https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy|
+|Access-Control-Allow-Origin|Jos sovellus tarvitsee Cross-origin requesteja (CORS)|Rajoita sallittuihin domaineihin, älä käytä *| | |https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS |
+|Upgrade-Insecure-Requests|Selain voidaan ohjata käyttämään HTTPS-protokollaa HTTP:n sijaan automaattisesti.|muut paitsi IE|1|https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests|
+
+Yksityiskohtia selainten tarjoamasta tuesta: [Can I Use?](http://www.caniuse.com/#compare=ie+11,edge+16,firefox+58,chrome+64,safari+11,opera+49&compare_cats=Security)
+
  
 
 ## Enkoodaukset
