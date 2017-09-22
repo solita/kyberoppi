@@ -1,12 +1,12 @@
 # Kyber, lyhyt oppimäärä
 
-Tästä materiaalipankista saat perustietoa verkkosovelluksen tietoturvasta ja sen testaamisesta. Materiaali on valikoitu ja tiivistetty palvelemaan ensisijaisesti ohjelmistokehittäjiä, jotka haluavat tehdä turvallisia järjestelmiä.
+Tästä materiaalipankista saat perustietoa verkkosovelluksen tietoturvasta ja sen testaamisesta. Materiaali on valikoitu ja tiivistetty palvelemaan ensisijaisesti ohjelmistokehittäjiä, jotka haluavat tehdä turvallisia järjestelmiä. 
 
-# Perusasiat
+# Perusasiat web-sovellusten tietoturvasta
 
-Kts. erillinen dokumentti [Perusasiat](perusasiat.md)
+Perustiedot on koottu erilliseen dokumenttiin: [Perusasiat](perusasiat.md).
 
-# Referenssi materiaali
+# Referenssimateriaali
 
 ## Autentikoinnin tarkastuslista
 
@@ -14,7 +14,6 @@ Kts. erillinen dokumentti [Perusasiat](perusasiat.md)
 * Voiko tunnistetta ohjata hyökkääjän haltuun jotenkin? (HttpOnly ja secure -flagit?)
 * Voiko käyttäjän puolesta tehdä pyyntöjä sovellukseen? (CSRF-esto käytössä?)
 * Voiko sovelluksen tarkastusta käyttäjätunnuksesta/salasanasta manipuloida?
-
 
 ## Same-origin policy
 
@@ -98,8 +97,6 @@ Data-tyyppistä "verkko-osoitetta" voidaan käyttää myös dynaamisesti kuvien 
 
 Lisätietoa:
 * https://github.com/ouspg/urlhandlers
-
-
 
 
 # Lisenssi
