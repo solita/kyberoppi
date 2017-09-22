@@ -38,10 +38,29 @@ X-Content-Type-Options: nosniff|Estää selainta arvaamasta uudelleen MIME-type�
 |Same-Site|CSRF-esto|Chrome, Opera| lax (strict jossain tapauksissa)|https://www.owasp.org/index.php/SameSite |
  
 
+## Enkoodaukset
+
+Eri tilanteissa web-sovellukset enkoodaavat sisältöä eri tavoilla. Erilaisten suodattimien ja tarkistusten ohittaminen edellyttää joskus erilaisten enkoodausten hyväksikäyttöä. Tässä on yhteenveto ja esimerkkejä.
+
+* normaali: ```alert(1)```
+* Javascript, Octal: ```\141\154\145\162\164\50\61\51```
+* HTML, hex: ```&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;&#x31;&#x29;```
+* HTML, decimal: ```&#97;&#108;&#101;&#114;&#116;&#40;&#49;&#41;```
+* Javascript,HEX: ```\x61\x6c\x65\x72\x74\x28\x31\x29```
+* Javascript, unicode ```\u0061\u006c\u0065\u0072\u0074\u0028\u0031\u0029 ```
+* Javascript, Unicode ```\u{0061} .. ```
+* URL: ```%61%6c%65%72%74%28%31%29```
+
+Lisätietoa:
+Javascriptin enkoodaukset: https://mathiasbynens.be/notes/javascript-escapes
+HTML enkoodaukset: https://mathiasbynens.be/notes/ambiguous-ampersands
+
+
+
 
 # Lisenssi
 
-!(88x31.png)
+![lisenssi](88x31.png)
 
 Creative Commons, Attribution-NonCommercial CC BY-NC
 Kts. [LICENSE].
