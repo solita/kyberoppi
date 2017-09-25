@@ -7,7 +7,8 @@ HUOM: Muista että tietomurron yrittäminenkin on rangaistava teko! Älä tee lu
 
 # Perusasiat web-sovellusten tietoturvasta
 
-Perustiedot on koottu erilliseen dokumenttiin: [Perusasiat](perusasiat.md).
+Perustiedot ja työkalujen peruskäyttöä koskeva materiaali on koottu erilliseen dokumenttiin: [Perusasiat](perusasiat.md).
+
 
 # Referenssimateriaali
 

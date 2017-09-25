@@ -137,7 +137,9 @@ Kts. lisätietoja [OWASP Top 10 sivulta](https://www.owasp.org/index.php/Top_10_
 
 # Työkalut
 
-Hyvin paljon voi tehdä selaimen kehitystyökaluilla.
+## Selaimen developer tools
+
+Hyvin paljon voi tehdä selaimen kehitystyökaluilla. Selaimesta riippuen ominaisuudet ja toiminnon aktivointi ovat erilaisia, mutta tässä on käytetty esimerkkinä Chromea.
 
 Valikosta voidaan avata developer tools näkyviin
 ![developer tools](devtools2.png)
@@ -151,8 +153,46 @@ Javascript-konsolissa voi ajaa Javascript-komentoja ja se on hyödyllinen kun tu
 ![javascript console](devtools1.png)
 
 
-
+## Proxy
 
 HTTP proxy, esimerkiksi [ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) auttaa manipuloimaan ja tarkkailemaan liikennettä selaimen ja palvelimen välillä.
 
+[Burp Suite](https://portswigger.net/burp) on pätevä kaupallinen vaihtoehto ZAP proxylle. 
 
+## curl
+
+[curl](https://curl.haxx.se/) on komentorivityökalu, jonka avulla on helppo tehdä HTTP-pyyntöjä ja se täydentää selaimen ja proxyn käyttöä verkkosovelluksen testaamisessa. Tässä on esimerkkejä referenssiksi yleisimpien tapauten osalta.
+
+### Peruskutsu, HTTP GET
+```
+curl http://kohde.fi:8080/status/1
+```
+
+### Cookien asettaminen
+```
+curl --cookie "USER_TOKEN=HAXXOR" http://kohde.fi:8080/status/1
+```
+
+### HTTP Basic Auth
+```
+curl -u username:password http://kohde.fi:8080/status/1
+```
+
+### HTTP POST, Form-lomakkeen lähettäminen
+```
+curl -d "nimi=Teppo&palkka=20000" http://kohde.fi:8080/status/1
+```
+
+### HTTP Headerin asettaminen manuaalisesti
+```
+curl -H 'Content-Type: application/json' http://kohde.fi:8080/status/1
+```
+
+### Muita hyödyllisiä optioita
+* ```-v``` - verbose, näyttää yksityiskohtaisia tietoja verkkoliikenteestä kutsun yhteydessä.
+* ```@``` avulla voidaan lukea pyyntöä varten data tiedostosta.
+* ```curl http://api.fi/fo/[1-14]``` - tehdään pyynnöt 1..14 kerralla
+* ```curl http://api.fi/fo/{1, 5, 14}``` - tehdään pyynnöt 1,5,14
+* ```-s``` -silent, skriptauksessa hyödyllinen tapa estää ylimääräiset tulostukset
+* ```-k``` -insecure, älä välitä SSL-sertifikaatin oikeellisuudesta. Testauksessa usein tarpeellista.
+ 
