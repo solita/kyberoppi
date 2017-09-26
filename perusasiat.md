@@ -72,7 +72,7 @@ Lai lai
 
 ## HTML, hyvin lyhyt oppimäärä
 
-* ```<tag>``` avaa markup-elementin, </tag> sulkee elementin. jos "tag" viittaa johonkin mitä selain ei tunnista, tyypillisesti selain ohittaa sen kokonaan.
+* ```<tag>``` avaa markup-elementin, ```</tag>``` sulkee elementin. jos "tag" viittaa johonkin mitä selain ei tunnista, tyypillisesti selain ohittaa sen kokonaan.
 * Eli ```<``` ja ```>``` ovat erikoismerkkejä, jotka eivät voi esiintyä tekstissä sellaisenaan.
 * ```<script>``` tagin avulla voidaan esitellä Javascript-koodia (tai muita skriptikieliä)
 * ```<!--``` aloittaa kommentin ja ```-->``` sulkee sen. Näiden välissä oleva teksti on selaimen kannalta kommentteja, ei näkyviä elementtejä.
