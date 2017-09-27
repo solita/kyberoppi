@@ -71,6 +71,16 @@ Eri tilanteissa web-sovellukset enkoodaavat sisältöä eri tavoilla. Erilaisten
 * URL: ```%61%6c%65%72%74%28%31%29```
 * Base64
 
+### Javascript, puolipiste-enkoodauksen ohitus
+
+Myös tämä o nsallittu tapa enkoodata asioita joskus.
+
+```
+&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041
+```
+
+
+
 Lisätietoa:
 * Javascriptin enkoodaukset: https://mathiasbynens.be/notes/javascript-escapes
 * HTML enkoodaukset: https://mathiasbynens.be/notes/ambiguous-ampersands
@@ -82,14 +92,20 @@ Lisätietoa:
 Javascriptin ujuttamiseen ajoon on useita eri tapoja jos sovelluksessa on huolimattomuuden takia jonkinlainen XSS-aukko tai muu ongelma. Tässä on listattu joitakin:
 
 * ```<script>``` tagin käyttö.
-* ```onError=alert(1)``` erilaiset event-käsittelijät, joista onError on yksi.  
+* ```<img src="lol.jpg" onError=alert(1)``` erilaiset event-käsittelijät, joista onError on yksi.
+* lainausmerkit voi jättää pois tai korvata heittomerkillä. Jossain tilanteissa myös käänteisellä heittomerkillä.
+* Selaimet ovat sallivia viallisen HTML:n suhteen.
 * ```<svg/onload=alert(1)>``` SVG-kuvaformaation hyväksikäyttö + event handler.
-* XML-dokumentin sisällä (CDATA)
+* XML-dokumentin sisällä (CDATA ja muita keinoja)
 * SVG-kuvan käyttö alustana (CDATA + script)
+* JSON-rakenteen sisällä (JSON on Javascriptia ja sen virheellinen käsittely voi johtaa ongelmiin)
 
 Lisätietoa:
 * https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot
 * https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20injection
+* https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
+* https://html5sec.org/
+
 
 ## Erikoiset URL:t
 
