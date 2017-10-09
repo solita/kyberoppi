@@ -9,36 +9,36 @@
 
 ## Same-origin policy
 
-|URL|Lopputulos|Syy|
-|--|:---:|---:|
-|http://www.example.com/dir/page2.html|Ok|Sama protokolla, host ja portti|
-|http://www.example.com/dir2/other.html|Ok|Sama protokolla, host ja portti|
-|http://username:password@www.example.com/dir2/other.html|Ok|Sama protokolla, host ja port|
-|http://www.example.com:81/dir/other.html|Epäonnistuu|Sama protokolla, host, mutta eri portti|
-|https://www.example.com/dir/other.html|Epäonnistuu|Eri protokolla|
-|http://en.example.com/dir/other.html|Epäonnistuu|Eri host|
-|http://example.com/dir/other.html|Epäonnistuu|Eri host (vaaditaan tarkka vastaavuus)|
-|http://v2.www.example.com/dir/other.html|Epäonnistuu|Eri host (vaaditaan tarkka vastaavuus)|
-|http://www.example.com:80/dir/other.html|Epäselvä|Portti määritelty. Riippuu selaimesta.|
+|URL|Lopputulos|
+|--|:---:|
+|http://www.example.com/dir/page2.html|Ok|
+|http://www.example.com/dir2/other.html|Ok|
+|http://username:password@www.example.com/dir2/other.html|Ok|
+|http://www.example.com:81/dir/other.html|Epäonnistuu|
+|https://www.example.com/dir/other.html|Epäonnistuu|
+|http://en.example.com/dir/other.html|Epäonnistuu|
+|http://example.com/dir/other.html|Epäonnistuu|
+|http://v2.www.example.com/dir/other.html|Epäonnistuu|
+|http://www.example.com:80/dir/other.html|Epäselvä|
 
 ## HTTP headerit
 
 |Header|Mikä se on?|
 |------|-----------|
-X-Content-Type-Options: nosniff|Estää selainta arvaamasta uudelleen MIME-typeä.|
-|Content-Type |MIME-type..|
-|Content-Disposition|Liitetiedostojen erottamiseen sisällöstä, joka näytetään selaimessa.|
+X-Content-Type-Options: nosniff|Estää MIME-typen päättelyn.|
+|Content-Type |MIME-type.|
+|Content-Disposition|Liitetiedostojen erottamiseen sisällöstä.|
 |X-Frame-Options:SAMEORIGIN| Estää avaamisen frameen mielivaltaisesta domainista.|
 |Cookie + secure| Salaa cookien. Toimii vain jos on HTTPS.|
 |cookie + HTTPOnly| Cookien käsittely javascriptilla estetty.|
 |Same-Site|CSRF-esto|
-|Strict-Transport-Security| Ohjeistaa selainta käyttämään aina HTTPS:ää. Ignoroidaan HTTP:tä käytettäessä.|
-|Cache-Control|IE:n kanssa monenlaisia ongelmia luvassa. Voi toimia myös eri tavalla HTTPS-protokollassa.|
-|X-XSS-Protection|Ehdottaa selaimelle, että sisällössä voi olla potentiaalisesti XSS sisältöä.|
-|X-Forwarded-For|headeri palvelimelle reverse proxy-palvelimelta. Vastaava myös x-forwarded-host|
-|Content-Security-Policy|Voi asettaa rajoituksia selaimelle sisällön suhteen.| 
-|Access-Control-Allow-Origin|Jos sovellus tarvitsee Cross-origin requesteja (CORS)| 
-|Upgrade-Insecure-Requests|Selain käyttää HTTPS-protokollaa HTTP:n sijaan automaattisesti.|
+|Strict-Transport-Security| Käytä aina HTTPS:ää. Ignoroidaan HTTP:tä käytettäessä.|
+|Cache-Control|Välimuistin käsittely.|
+|X-XSS-Protection|Sisällössä potentiaalisesti XSS sisältöä.|
+|X-Forwarded-For|headeri palvelimelle reverse proxy-palvelimelta. Vastaava x-forwarded-host|
+|Content-Security-Policy|Rajoituksia selaimelle sisällön suhteen.| 
+|Access-Control-Allow-Origin|Ohita same-origin policy (CORS)| 
+|Upgrade-Insecure-Requests|HTTPS-protokolla HTTP:n sijaan automaattisesti.|
 
 ## Enkoodaukset
 
@@ -72,21 +72,21 @@ X-Content-Type-Options: nosniff|Estää selainta arvaamasta uudelleen MIME-type�
 
 ## URL handlerit
 
-* data:text/html - esimerkiksi ```data:text/html,<script>alert(1)</script>```
+* data:text/html - ```data:text/html,<script>alert(1)</script>```
 * ```javascript:alert(1)```
 * ```http://;URL=javascript:alert(1)```
-* Base64-enkoodauksen hyväksikäyttö: ```data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+```
-* ```mailto:```  -sähköpostin lähetys
-* ```callto:```  -puhelinsoitto (esimerkiksi maksulliseen numeroon)
-* ```tel:``` - puhelinsoitto (esimerkiksi maksulliseen numeroon)
-* ```file://``` - tiedostojärjestelmä paikallisen koneen levyllä
+* Base64: ```data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+```
+* ```mailto:```  -sähköposti
+* ```callto:```  -puhelinsoitto
+* ```tel:``` - puhelinsoitto
+* ```file://``` - tiedostojärjestelmä
 
 ## Parametrien käsittelyn rikkominen
 
 * Parametrin jättäminen pois
-* Arvon korvaaminen jollain muulla (jonkun muun id, -1,  tms..)
-* Saman parametrin toistaminen useita kertoja eri arvoilla (HTTP Parameter Pollution)
-* Erikoisarvojen käyttö: ```null```, ```nil```, ```NaN```, lukualueiden ääriarvot
+* Arvon korvaaminen (jonkun muun id, -1,  tms..)
+* Toistaminen useita kertoja eri arvoilla (HTTP Parameter Pollution)
+* Erikoisarvot: ```null```, ```nil```, ```NaN```, lukualueiden ääriarvot
 * Erikoismerkit: ```'```, ```%``` ja muut 
 * Arvojen lisääminen pyynnön mukana. 
 * ylipitkän arvon käyttö
@@ -96,7 +96,8 @@ X-Content-Type-Options: nosniff|Estää selainta arvaamasta uudelleen MIME-type�
 ## Piilotetut elementit käyttöliittymässä
 
 * ```form``` elementin hidden-kentät.
-* CSS-tyyleillä piilotetut käyttöliittymäelementit voivat avata pääsyn toimintoihin, joita ei pitäisi päästä käyttämään.
+* CSS-tyylien kautta piilotetut
+* Position avulla piilotus
 
 ## OWASP Top 10 (2013)
 
