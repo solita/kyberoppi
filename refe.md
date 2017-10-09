@@ -28,17 +28,17 @@
 X-Content-Type-Options: nosniff|Estää selainta arvaamasta uudelleen MIME-typeä.|
 |Content-Type |MIME-type..|
 |Content-Disposition|Liitetiedostojen erottamiseen sisällöstä, joka näytetään selaimessa.|
-|X-Frame-Options:SAMEORIGIN| Estää sovelluksen avaamisen frameen mielivaltaisesta domainista.|
-|Cookie + secure| Salaa cookien. Toimii vain jos on HTTPS, eli ei välttämättä devausympäristössä.|
-|cookie + HTTPOnly| Cookien käsittely javascriptilla estetty. Session cookieen ei ole mitenkään tarpeellista päästä käsiksi Javascriptilla clientin päässä.|
+|X-Frame-Options:SAMEORIGIN| Estää avaamisen frameen mielivaltaisesta domainista.|
+|Cookie + secure| Salaa cookien. Toimii vain jos on HTTPS.|
+|cookie + HTTPOnly| Cookien käsittely javascriptilla estetty.|
 |Same-Site|CSRF-esto|
 |Strict-Transport-Security| Ohjeistaa selainta käyttämään aina HTTPS:ää. Ignoroidaan HTTP:tä käytettäessä.|
 |Cache-Control|IE:n kanssa monenlaisia ongelmia luvassa. Voi toimia myös eri tavalla HTTPS-protokollassa.|
 |X-XSS-Protection|Ehdottaa selaimelle, että sisällössä voi olla potentiaalisesti XSS sisältöä.|
-|X-Forwarded-For|Pyynnön mukana välitettävä headeri palvelimelle, jota käytetään reverse proxy-palvelimen kanssa. Tätä ei pitäisi hyväksyä käyttäjän selaimelta, koska se voi aiheuttaa ongelmia. Vastaava myös x-forwarded-host|
-|Content-Security-Policy|Voi asettaa rajoituksia sille mitä sisältöä selain voi ladata ja estää ongelmia.| 
+|X-Forwarded-For|headeri palvelimelle reverse proxy-palvelimelta. Vastaava myös x-forwarded-host|
+|Content-Security-Policy|Voi asettaa rajoituksia selaimelle sisällön suhteen.| 
 |Access-Control-Allow-Origin|Jos sovellus tarvitsee Cross-origin requesteja (CORS)| 
-|Upgrade-Insecure-Requests|Selain voidaan ohjata käyttämään HTTPS-protokollaa HTTP:n sijaan automaattisesti.|
+|Upgrade-Insecure-Requests|Selain käyttää HTTPS-protokollaa HTTP:n sijaan automaattisesti.|
 
 ## Enkoodaukset
 
