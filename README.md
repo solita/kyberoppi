@@ -73,7 +73,7 @@ Eri tilanteissa web-sovellukset enkoodaavat sisältöä eri tavoilla. Erilaisten
 
 ### Javascript, puolipiste-enkoodauksen ohitus
 
-Myös tämä o nsallittu tapa enkoodata asioita joskus.
+Myös tämä on sallittu tapa enkoodata asioita joskus.
 
 ```
 &#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041
@@ -94,7 +94,7 @@ Javascriptin ujuttamiseen ajoon on useita eri tapoja jos sovelluksessa on huolim
 * ```<script>``` tagin käyttö.
 * ```<img src="lol.jpg" onError=alert(1)``` erilaiset event-käsittelijät, joista onError on yksi.
 * lainausmerkit voi jättää pois tai korvata heittomerkillä. Jossain tilanteissa myös käänteisellä heittomerkillä.
-* Selaimet ovat sallivia viallisen HTML:n suhteen.
+* Selaimet ovat sallivia viallisen HTML:n suhteen. Esim. ```<svg onload=alert(1)//```
 * ```<svg/onload=alert(1)>``` SVG-kuvaformaation hyväksikäyttö + event handler.
 * XML-dokumentin sisällä (CDATA ja muita keinoja)
 * SVG-kuvan käyttö alustana (CDATA + script)
