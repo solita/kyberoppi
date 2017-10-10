@@ -1,6 +1,6 @@
 # Kyber, lyhyt oppimäärä
 
-Tästä materiaalipankista saat perustietoa verkkosovelluksen tietoturvasta ja sen testaamisesta. Materiaali on valikoitu ja tiivistetty palvelemaan ensisijaisesti ohjelmistokehittäjiä, jotka haluavat tehdä turvallisia järjestelmiä. 
+Tästä materiaalipankista saat perustietoa verkkosovelluksen tietoturvasta ja sen testaamisesta. Materiaali on valikoitu ja tiivistetty palvelemaan ensisijaisesti ohjelmistokehittäjiä, jotka haluavat tehdä turvallisia järjestelmiä. Materiaalin tarkoitus on tukea omatoimista penetraatiotestausta järjestelmän laadunvarmistuksessa ja tietoturvallisuuden testaamisessa.
 
 HUOM: Muista että tietomurron yrittäminenkin on rangaistava teko! Älä tee luvatonta tietoturvatestausta muiden järjestelmille. 
 
