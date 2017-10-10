@@ -12,6 +12,9 @@ Perustiedot ja työkalujen peruskäyttöä koskeva materiaali on koottu erillise
 
 # Referenssimateriaali
 
+Referenssimateriaali tiivistetyssä muodossa tulostamista varten: [Kybertestauksen cheatsheet](https://github.com/solita/kyberoppi/raw/master/Solita-Cyber-CheatSheet.pdf)
+
+
 ## OWASP Top 10 (2013)
 
 [OWASP Top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) on lista yleisimmistä verkkosovellusten tietoturva-aukoista. OWASP-sivustolta löytyy lisätietoa aukkojen hyväksikäytöstä hyökkäyksestä ja oikeaoppisesta suojautumisesta sovelluskehittäjille.
