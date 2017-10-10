@@ -7,6 +7,20 @@
 * Voiko käyttäjän puolesta tehdä pyyntöjä sovellukseen? (CSRF-esto käytössä?)
 * Voiko sovelluksen tarkastusta käyttäjätunnuksesta/salasanasta manipuloida?
 
+## File upload
+
+* Onnistuuko ajettavan skriptin upload? (WebShell-backdoor.php)
+* ```filename``` attribuutin manipulointi (```*```, ```?```, ```;```, ```../../etc/passwd``` yms)
+* ```null byte``` (```0x00```) käyttö esim. filename-kentän suojauksen ohittamiseen
+* ```virus.exe.jpg``` vs. ```virus.jpg``` vs. ```virus.exe```
+* ```x.php``` -> ```test.jpg/x.php``` 
+* Ajettavaa koodia formaatin kautta (SVG, DOC, Excel, XML)
+* ```Content-type``` attribuutin manipulointi
+* Purettavan ```ZIP, TAR, GZ``` yms. sisällä sopiva polku, esim. ```../../backdoor.php```
+* ```PDF``` on myös ZIP ja paljon muuta. 
+* ```imagemagick``` tai muun taustaohjelman hyväksikäyttö
+
+
 ## Same-origin policy
 
 |URL|Lopputulos|
