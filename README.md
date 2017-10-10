@@ -162,7 +162,6 @@ Selaimet tunnistavat useita URL-osoitteita, jotka eivät ole normaaleja verkko-o
 
 * data:text/html - esimerkiksi ```data:text/html,<script>alert(1)</script>```
 * ```javascript:alert(1)```
-* ```http://;URL=javascript:alert(1)```
 * Base64-enkoodauksen hyväksikäyttö: ```data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+```
 * ```mailto:```  -sähköpostin lähetys
 * ```callto:```  -puhelinsoitto (esimerkiksi maksulliseen numeroon)
@@ -173,12 +172,12 @@ Data-tyyppistä "verkko-osoitetta" voidaan käyttää myös dynaamisesti kuvien 
 
 Lisätietoa:
 * https://github.com/ouspg/urlhandlers
+* Data-URL määrittelevä RFC: https://tools.ietf.org/html/rfc2397
 
-## Parametrien käsittely
-
-Parametrien käsittelyssä tehdyt ohjelmointivirheet ovat yleinen tapa hyödyntää sovelluksen virhettä. Tässä on esimerkkejä asioista joita voit kokeilla:
 
 ## Parametrien käsittelyn rikkominen
+
+Parametrien käsittelyssä tehdyt ohjelmointivirheet ovat yleinen tapa hyödyntää sovelluksen virhettä. Tässä on esimerkkejä asioista joita voit kokeilla.
 
 * Parametrin jättäminen pois
 * Arvon korvaaminen (jonkun muun id, -1,  tms..)
