@@ -95,7 +95,7 @@ Javascriptin ujuttamiseen ajoon on useita eri tapoja jos sovelluksessa on huolim
 * ```<img src="lol.jpg" onError=alert(1)``` erilaiset event-käsittelijät, joista onError on yksi.
 * lainausmerkit voi jättää pois tai korvata heittomerkillä. Jossain tilanteissa myös käänteisellä heittomerkillä.
 * Selaimet ovat sallivia viallisen HTML:n suhteen. Esim. ```<svg onload=alert(1)//```
-* ```<svg/onload=alert(1)>``` SVG-kuvaformaation hyväksikäyttö + event handler.
+* ```<svg/onload=alert(1)>``` SVG-kuvaformaatin hyväksikäyttö + event handler.
 * XML-dokumentin sisällä (CDATA ja muita keinoja)
 * SVG-kuvan käyttö alustana (CDATA + script)
 * JSON-rakenteen sisällä (JSON on Javascriptia ja sen virheellinen käsittely voi johtaa ongelmiin)
