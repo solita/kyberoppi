@@ -88,7 +88,6 @@ X-Content-Type-Options: nosniff|Estää MIME-typen päättelyn.|
 
 * data:text/html - ```data:text/html,<script>alert(1)</script>```
 * ```javascript:alert(1)```
-* ```http://;URL=javascript:alert(1)```
 * Base64: ```data:text/html;base64,PHN2Zy9vbmxvYWQ9YWxlcnQoMik+```
 * ```mailto:```  -sähköposti
 * ```callto:```  -puhelinsoitto
