@@ -65,6 +65,14 @@ Käyttäjältä saatu tiedosto voi sisältää haittaohjelman tai viruksen, teki
 * Purettavan ```ZIP, TAR, GZ``` yms. sisällä sopiva polku, esim. ```../../backdoor.php```
 * ```PDF``` on myös ZIP ja paljon muuta.
 * ```imagemagick``` tai muun taustaohjelman hyväksikäyttö
+* ```CSV``` avattuna Excel-ohjelmassa on vaarallinen. 
+
+
+Lisätietoa:
+* http://georgemauer.net/2017/10/07/csv-injection.html
+* https://www.owasp.org/index.php/Test_Upload_of_Malicious_Files_(OTG-BUSLOGIC-009)
+* https://www.acunetix.com/websitesecurity/upload-forms-threat/
+
 
 
 ## HTTP headerit
