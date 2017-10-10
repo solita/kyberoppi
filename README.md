@@ -12,6 +12,22 @@ Perustiedot ja työkalujen peruskäyttöä koskeva materiaali on koottu erillise
 
 # Referenssimateriaali
 
+## OWASP Top 10 (2013)
+
+[OWASP Top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) on lista yleisimmistä verkkosovellusten tietoturva-aukoista. OWASP-sivustolta löytyy lisätietoa aukkojen hyväksikäytöstä hyökkäyksestä ja oikeaoppisesta suojautumisesta sovelluskehittäjille.
+
+* A1 Injection
+* A2 Broken Authentication
+* A3 Cross-Site Scripting (XSS)
+* A4 Insecure Direct Object references
+* A5 Security Misconfiguration
+* A6 Sensitive Data Exposure
+* A7 Missing Function Level Access Control
+* A8 Cross-Site Request Forgery (CSRF)
+* A9 Using Components with Known Vulnerabilities
+* A10 Unvalidated Redirects and Forwards
+
+
 ## Autentikoinnin tarkastuslista
 
 * Onko tunniste satunnainen, siten että sitä ei voi arvata tai päätellä?
@@ -167,20 +183,6 @@ Parametrien käsittelyssä tehdyt ohjelmointivirheet ovat yleinen tapa hyödynt�
 * ```form``` elementin hidden-kentät.
 * CSS-tyylien kautta piilotetut
 * Position avulla piilotus
-
-## OWASP Top 10 (2013)
-
-* A1 Injection
-* A2 Broken Authentication
-* A3 Cross-Site Scripting (XSS)
-* A4 Insecure Direct Object references
-* A5 Security Misconfiguration
-* A6 Sensitive Data Exposure
-* A7 Missing Function Level Access Control
-* A8 Cross-Site Request Forgery (CSRF)
-* A9 Using Components with Known Vulnerabilities
-* A10 Unvalidated Redirects and Forwards
-
 
 # Lisenssi
 
