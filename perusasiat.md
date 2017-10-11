@@ -152,6 +152,7 @@ Javascript-konsolissa voi ajaa Javascript-komentoja ja se on hyödyllinen kun tu
 
 ![javascript console](devtools1.png)
 
+Lisätietoja ja virallinen dokumentaatio Chromen kehitystyökaluista: [Chrome developer tools](https://developers.google.com/web/tools/chrome-devtools/)
 
 ## Proxy
 
