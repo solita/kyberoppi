@@ -9,6 +9,10 @@ HUOM: Muista että tietomurron yrittäminenkin on rangaistava teko! Älä tee lu
 
 Perustiedot ja työkalujen peruskäyttöä koskeva materiaali on koottu erilliseen dokumenttiin: [Perusasiat](perusasiat.md).
 
+# Työkalut
+
+Työkaluista on erillinen dokumentti: [Työkalut](tyokalut.md)
+
 
 # Referenssimateriaali
 
