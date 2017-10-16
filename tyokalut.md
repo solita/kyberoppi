@@ -56,7 +56,7 @@ curl -d "nimi=Teppo&palkka=20000" http://kohde.fi:8080/status/1
 ### HTTP Headerin asettaminen manuaalisesti
 ```
 curl -H 'Content-Type: application/json' http://kohde.fi:8080/status/1
-
+```
 
 ### Muita hyödyllisiä optioita
 * ```-v``` - verbose, näyttää yksityiskohtaisia tietoja verkkoliikenteestä kutsun yhteydessä.
@@ -65,6 +65,7 @@ curl -H 'Content-Type: application/json' http://kohde.fi:8080/status/1
 * ```curl http://api.fi/fo/{1, 5, 14}``` - tehdään pyynnöt 1,5,14
 * ```-s``` -silent, skriptauksessa hyödyllinen tapa estää ylimääräiset tulostukset
 * ```-k``` -insecure, älä välitä SSL-sertifikaatin oikeellisuudesta. Testauksessa usein tarpeellista.
+
 
 # Kali Linux
 
