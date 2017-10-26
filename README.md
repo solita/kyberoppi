@@ -13,6 +13,16 @@ Perustiedot ja työkalujen peruskäyttöä koskeva materiaali on koottu erillise
 
 Työkaluista on erillinen dokumentti: [Työkalut](tyokalut.md)
 
+# Materiaalia muualla
+
+Ohjelmistosuunnittelijoille on runsaasti materiaalia verkossa turvallisen ohjelmiston suunnittelusta ja toteuttamisesta. Kaikkia hyödyllisiä resursseja ei kannata yrittää listata, mutta tässä on linkkejä joihinkin hyödyllisiin materiaaleihin:
+
+* [The Basics of Web Application Security](https://martinfowler.com/articles/web-security-basics.html)
+* [Microsoft Web App Security Frame](https://msdn.microsoft.com/en-us/library/ff649461.aspx)
+* [OWASP Architecture Security Cheat Sheet](https://www.owasp.org/index.php/Application_Security_Architecture_Cheat_Sheet)
+* [Web Application Hacker's Handbook 2](https://www.amazon.com/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470)
+* [Penetration Testing - A Hands-On Intruction](https://www.amazon.com/Penetration-Testing-Hands-Introduction-Hacking/dp/1593275641)
+
 
 # Referenssimateriaali
 
