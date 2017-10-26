@@ -101,6 +101,14 @@ Analyysityökalujen ajaminen voidaan automatisoida, joten suosittelemme soveltam
 
 ![Cyber Security Pipeline](Kyberisokuva.png)
 
+# Esimerkki Dockerin käytöstä 
+
+![Docker Security Pipeline](kybertestaus-docker.png)
+
+Käytännön koodiesimerkki löytyy esimerkiksi täältä: [Docker DevSec Demo](https://github.com/lokori/docker-devsec-demo)
+
+
+
 
 
 
