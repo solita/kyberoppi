@@ -22,28 +22,27 @@ Ohjelmistosuunnittelijoille on runsaasti materiaalia verkossa turvallisen ohjelm
 * [OWASP Architecture Security Cheat Sheet](https://www.owasp.org/index.php/Application_Security_Architecture_Cheat_Sheet)
 * [Web Application Hacker's Handbook 2](https://www.amazon.com/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470)
 * [Penetration Testing - A Hands-On Intruction](https://www.amazon.com/Penetration-Testing-Hands-Introduction-Hacking/dp/1593275641)
-
+* [EdOverflow's Bug Bounty Cheat Sheet](https://github.com/EdOverflow/bugbounty-cheatsheet)
 
 # Referenssimateriaali
 
 Referenssimateriaali tiivistetyssä muodossa tulostamista varten: [Kybertestauksen cheatsheet](https://github.com/solita/kyberoppi/raw/master/Solita-Cyber-CheatSheet.pdf)
 
 
-## OWASP Top 10 (2013)
+## OWASP Top 10 (2017)
 
 [OWASP Top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) on lista yleisimmistä verkkosovellusten tietoturva-aukoista. OWASP-sivustolta löytyy lisätietoa aukkojen hyväksikäytöstä hyökkäyksestä ja oikeaoppisesta suojautumisesta sovelluskehittäjille.
 
-* A1 Injection
-* A2 Broken Authentication
-* A3 Cross-Site Scripting (XSS)
-* A4 Insecure Direct Object references
-* A5 Security Misconfiguration
-* A6 Sensitive Data Exposure
-* A7 Missing Function Level Access Control
-* A8 Cross-Site Request Forgery (CSRF)
-* A9 Using Components with Known Vulnerabilities
-* A10 Unvalidated Redirects and Forwards
-
+* A1 - Injection 
+* A2 - Broken Authentication
+* A3 - Sensitive Data Exposure
+* A4 - XML External Entities (XXE)
+* A5 - Broken Access Control
+* A6 - Security Misconfiguration
+* A7 - Cross-Site Scripting (XSS)
+* A8 - Insecure Deserialization
+* A9 - Using Components with Known Vulnerabilities
+* A10 - Insufficient Logging & Monitoring
 
 ## Autentikoinnin tarkastuslista
 
@@ -93,6 +92,7 @@ Lisätietoa:
 
 
 ## HTTP headerit
+
 
 |Header|Mikä se on?| Selaintuki | Suositeltava arvo, miksi? | Muuta? |
 |------|-----------|:-----------:|:----------------------:|------:|
